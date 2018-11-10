@@ -1,0 +1,8 @@
+use myDBTest;
+db.personal.insertMany([
+	{"id":123,"nombre":"Juan Carlos","apellidos":"Perez Téllo","sueldo":4500,"direccion":{"calle":"Camino Real","ciudad":"Lima","zipcode":95014},"phoneNumbers":[998675422, 998664426],"posicion":"Developer"},
+	{"id":124,"nombre":"David Ernesto","apellidos":"Díaz Gamboa","sueldo":6500,"direccion":{"calle":"Camelias","ciudad":"Lima","zipcode":97014},"phoneNumbers":[998673422, 996164422],"posicion":"Abogado"},
+	{"id":125,"nombre":"Marlon Miguel","apellidos":"Bueno Pérez","sueldo":4500,"direccion":{"calle":"Cipreces","ciudad":"Piura","zipcode":98014},"phoneNumbers":[997664422, 997664424],"posicion":"Contador"},
+	{"id":126,"nombre":"Ana María","apellidos":"Rosa Uribe","sueldo":8500,"direccion":{"calle":"Palmeras","ciudad":"Arequipa","zipcode":96014},"phoneNumbers":[998664422, 998462423],"posicion":"Project Manager"},
+]);
+db.personal.insertOne({"id":127,"nombre":"Víctor Andrés","apellidos":"Benítez Rojas","sueldo":9500,"direccion":{"calle":"Jazmines","ciudad":"Lima","zipcode":95015},"phoneNumbers":[998635420, 995667425],"posicion":"Data Scientist"});
